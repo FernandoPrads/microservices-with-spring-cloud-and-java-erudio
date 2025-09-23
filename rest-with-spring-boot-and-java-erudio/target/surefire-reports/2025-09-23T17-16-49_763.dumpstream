@@ -1,0 +1,5 @@
+# Created at 2025-09-23T17:16:51.091
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Java-SpringBoot\microservices-with-spring-cloud-and-java-erudio\rest-with-spring-boot-and-java-erudio\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
