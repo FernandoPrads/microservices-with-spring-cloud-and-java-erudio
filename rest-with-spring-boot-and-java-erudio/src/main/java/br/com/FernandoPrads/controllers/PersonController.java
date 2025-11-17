@@ -1,6 +1,6 @@
 package br.com.FernandoPrads.controllers;
 
-import br.com.FernandoPrads.PersonServices;
+import br.com.FernandoPrads.services.PersonServices;
 import br.com.FernandoPrads.model.Person;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
@@ -32,7 +32,7 @@ public class PersonController {
             method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public Person findById(@PathVariable("id") String id) {
+    public Person findById(@PathVariable("id") Long id) {
         return service.findById(id);
     }
 
@@ -61,7 +61,7 @@ public class PersonController {
             method = RequestMethod.DELETE,
             produces = MediaType.APPLICATION_JSON_VALUE
     )
-    public void delete(@PathVariable("id") String id) {
+    public void delete(@PathVariable("id") Long id) {
         service.delete(id);
 
     }
